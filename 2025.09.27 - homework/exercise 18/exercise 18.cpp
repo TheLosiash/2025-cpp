@@ -1,18 +1,10 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 
-using namespace std;
-
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
+int main(int argc, char** argv) 
+{
     int N;
-    int R;
-    input >> N;
-    R = (N % 10) + (N % 100 / 10) + (N / 100);
-    output << R;
-    input.close();
-    output.close();
+    scanf_s("%d", &N);
+    int R = (N % 10) + (N % 100 / 10) + (N / 100);
     printf("The sum of numbers is %d", R);
     return 0;
 }

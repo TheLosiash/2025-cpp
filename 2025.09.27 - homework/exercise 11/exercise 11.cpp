@@ -1,18 +1,13 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 
-using namespace std;
-
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
+int main(int argc, char** argv) 
+{
     int C;
     int A;
     int B;
-    input >> C >> A >> B;
-    output << A + B + C;
-    input.close();
-    output.close();
+    scanf_s("%d", &A);
+    scanf_s("%d", &B);
+    scanf_s("%d", &C);
     printf("The sum is %d", A+B+C);
     return 0;
 }

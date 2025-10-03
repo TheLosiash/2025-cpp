@@ -1,18 +1,11 @@
 ﻿#include <iostream>
-#include <fstream>
 
-int main() {
-    std::ifstream input("INPUT.TXT");
-    std::ofstream output("OUTPUT.TXT");
 
+int main(int argc, char** argv) 
+{
     long long N;
-    input >> N;
-
-    long long max_kings = ((N+1) / 2) * ((N+1) / 2);
-
-    output << max_kings << std::endl;
-
-    input.close();
-    output.close();
+    scanf_s("%lld", &N);
+    long long M = ((N+1) / 2) * ((N+1) / 2);
+    printf("Number of kings is %lld", M);
     return 0;
 }

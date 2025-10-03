@@ -1,26 +1,14 @@
 ﻿#include <iostream>
-#include <fstream>
 
-int main() {
-    std::ifstream input("INPUT.TXT");
-    std::ofstream output("OUTPUT.TXT");
-
+int main(int argc, char** argv) 
+{
     long long N;
     long long K;
-    input >> N >> K;
-
-    
-    long long apples_per_student = K / N; 
-    long long remaining_apples = K % N;   
-
-    
-    long long unhappy_students = (K % N == 0) ? 0 : N - (K % N); 
-
-   
-    output << apples_per_student << " " << remaining_apples << " " << unhappy_students << std::endl;
-
-    input.close();
-    output.close();
-
+    scanf_s("%lld", &N);
+    scanf_s("%lld", &K);
+    long long aps = K / N; 
+    long long rap = K % N;   
+    long long uhs = (K % N == 0) ? 0 : N - (K % N);
+    printf("Number of apples per student %lld. Number of remaining apples is %lld. Number of unhappy students is %lld", aps, rap, uhs);
     return 0;
 }

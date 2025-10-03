@@ -1,19 +1,13 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 
-using namespace std;
-
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
+int main(int argc, char** argv) 
+{
     int C;
     int A;
     int B;
-    input >> A >> B;
+    scanf_s("%d",&A);
+    scanf_s("%d", &B);
     C = (A-1)*(B-1)+1;
-    output << C;
-    input.close();
-    output.close();
     printf("The number of cheese parts is %d", C);
     return 0;
 }

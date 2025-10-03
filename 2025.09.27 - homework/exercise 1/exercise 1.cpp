@@ -1,18 +1,11 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 
-using namespace std;
-
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
+int main(int argc, char** argv) 
+{
     int a;
     int b;
-    input >> a >> b;
-    output << a + b;
-    input.close();
-    output.close();
-    printf("Numbers: %d and %d ", a, b);
+    scanf_s("%d", &a);
+    scanf_s("%d", &b);
     printf("Sum: %d", a + b);
     return 0;
 }

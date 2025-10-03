@@ -1,24 +1,15 @@
-﻿#include <fstream>
-#include <cmath>  
+﻿#include <iostream>  
+#include <cmath>
 
-using namespace std;
-
-int main() {
-    ifstream fin("INPUT.TXT");
-    ofstream fout("OUTPUT.TXT");
+int main(int argc, char** argv) 
+{
 
     long long a;
     long long b;
-    fin >> a >> b;
-
-    long long r = a % b;
-
-    if (r < 0) {
-        r += llabs(b);
-    }
-
-    fout << r << "\n";
-    fin.close();
-    fout.close();
+    scanf_s("%lld", &a);
+    scanf_s("%lld", &b);
+    int r = a % b;
+    r = r + (r < 0) * ((b > 0) ? b : -b);
+    printf("%d", r);
     return 0;
 }

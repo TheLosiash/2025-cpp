@@ -1,18 +1,13 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 
-using namespace std;
-
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
+int main(int argc, char** argv) 
+{
     int N; 
     int A; 
     int B;
-    input >> N >> A >> B;
-    output << 2*N*A*B;
-    input.close();
-    output.close();
+    scanf_s("%d", &N);
+    scanf_s("%d", &A);
+    scanf_s("%d", &B);
     printf("Mass of sulfide: %d", 2*N*A*B);
     return 0;
 }

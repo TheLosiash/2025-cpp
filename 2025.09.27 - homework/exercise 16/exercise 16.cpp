@@ -1,16 +1,10 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 
-using namespace std;
 
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
+int main(int argc, char** argv) 
+{
     int N;
-    input >> N;
-    output << N % 10;
-    input.close();
-    output.close();
+    scanf_s("%d", &N);
     printf("The last number is %d", N % 10);
     return 0;
 }

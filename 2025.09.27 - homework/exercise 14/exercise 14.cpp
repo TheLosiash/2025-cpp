@@ -1,21 +1,13 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 
-using namespace std;
-
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
-    int C;
-    int D;
+int main(int argc, char** argv) 
+{
     int K;
     int N;
-    input >> K >> N;
-    C = (N - 1) / K + 1;
-    D = (N - 1) % K + 1;
-    output << C << " " << D;
-    input.close();
-    output.close();
+    scanf_s("%d", &K);
+    scanf_s("%d", &N);
+    int C = (N - 1) / K + 1;
+    int D = (N - 1) % K + 1;
     printf("The number of page is %d. The number of line is %d", C, D);
     return 0;
 }

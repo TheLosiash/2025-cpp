@@ -1,16 +1,9 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 
-using namespace std;
-
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
+int main(int argc, char** argv) 
+{
     int a;
-    input >> a;
-    output << a;
-    input.close();
-    output.close();
+    scanf_s("%d", &a);
     printf("Number: %d", a);
     return 0;
 }

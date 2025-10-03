@@ -21,10 +21,6 @@
   <ItemGroup>
     <ClCompile Include="exercise 3.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <Text Include="input.txt" />
-    <Text Include="output.txt" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

@@ -1,25 +1,12 @@
-﻿#include <fstream>
-#include <iostream>
+﻿#include <iostream>
 
-using namespace std;
 
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
-    int A;
-    int B;
-    input >> A >> B;
-    if (A % B == 0 or B % A == 0)
-    {
-        output << 1;
-        printf("1");
-    }
-    else {
-        output << 666;
-        printf("666");
-    }
-        
-    input.close();
-    output.close();
+int main(int argc, char** argv) 
+{
+    int a;
+    int b;
+    scanf_s("%d", &a);
+    scanf_s("%d", &b);
+    printf("%d", (a % b == 0 || b % a == 0) ? 1 : 666);
     return 0;
 }

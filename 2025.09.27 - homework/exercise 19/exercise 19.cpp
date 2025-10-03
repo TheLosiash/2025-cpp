@@ -1,19 +1,11 @@
-﻿#include <fstream>
-#include <iostream>
-#include <cmath>
+﻿#include <iostream>
 
-using namespace std;
-
-int main() {
-    ifstream input("input.txt");
-    ofstream output("output.txt");
+int main(int argc, char** argv) 
+{
     int N;
     int R;
-    input >> N;
+    scanf_s("%d", &N);
     R = (N + 9) / 10;
-    output << R;
-    input.close();
-    output.close();
     printf("Number of luidors is %d", R);
     return 0;
 }
