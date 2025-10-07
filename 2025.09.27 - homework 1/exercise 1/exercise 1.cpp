@@ -2,10 +2,10 @@
 
 int main(int argc, char** argv) 
 {
-    int a;
-    int b;
+    int a = 0;
     scanf_s("%d", &a);
+    int b = 0;
     scanf_s("%d", &b);
-    printf("Sum: %d", a + b);
+    printf("%d", a + b);
     return 0;
 }

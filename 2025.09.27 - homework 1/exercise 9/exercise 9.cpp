@@ -2,10 +2,10 @@
 
 int main(int argc, char** argv)
 {
-    int M;
-    int T;
-    scanf_s("%d", &M);
-    scanf_s("%d", &T);
-    printf("Ivan is a winner!");
+    int m = 0;
+    scanf_s("%d", &m);
+    int t = 0;
+    scanf_s("%d", &t);
+    printf("Ivan");
     return 0;
 }

@@ -2,12 +2,10 @@
 
 int main(int argc, char** argv) 
 {
-    int C;
-    int A;
-    int B;
-    scanf_s("%d",&A);
-    scanf_s("%d", &B);
-    C = (A-1)*(B-1)+1;
-    printf("The number of cheese parts is %d", C);
+    int a = 0;
+    scanf_s("%d", &a);
+    int b = 0;
+    scanf_s("%d", &b);
+    printf("%d", (a - 1) * (b - 1) + 1);
     return 0;
 }

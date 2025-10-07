@@ -1,11 +1,11 @@
 ﻿#include <iostream>
 
-
 int main(int argc, char** argv) 
 {
-    long long N;
-    scanf_s("%lld", &N);
-    long long M = ((N+1) / 2) * ((N+1) / 2);
-    printf("Number of kings is %lld", M);
+    long long n = 0;
+    scanf_s("%lld", &n);
+    long long m = 0;
+    long long m = ((n + 1) / 2) * ((n + 1) / 2);
+    printf("%lld", m);
     return 0;
 }

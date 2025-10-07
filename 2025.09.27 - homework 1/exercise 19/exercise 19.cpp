@@ -2,10 +2,10 @@
 
 int main(int argc, char** argv) 
 {
-    int N;
-    int R;
-    scanf_s("%d", &N);
-    R = (N + 9) / 10;
-    printf("Number of luidors is %d", R);
+    int n = 0;
+    scanf_s("%d", &n);
+    int r = 0;
+    r = (n + 9) / 10;
+    printf("%d", r);
     return 0;
 }

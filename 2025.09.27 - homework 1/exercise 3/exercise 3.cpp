@@ -1,11 +1,10 @@
 #include <iostream>
 
-
 int main(int argc, char** argv) 
 {
-    int a;
+    int a = 0;
     scanf_s("%d", &a);
-    printf("Number of colours : %d", a );
-    printf(" Number of useful beads : %d", a+1 );
+    printf("%d", a);
+    printf("%d", a + 1);
     return 0;
 }

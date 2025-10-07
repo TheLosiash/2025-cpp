@@ -1,10 +1,9 @@
 ﻿#include <iostream>
 
-
 int main(int argc, char** argv) 
 {
-    int N;
-    scanf_s("%d", &N);
-    printf("The last number is %d", N % 10);
+    int n = 0;
+    scanf_s("%d", &n);
+    printf("%d", n % 10);
     return 0;
 }

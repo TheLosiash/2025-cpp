@@ -1,12 +1,14 @@
-﻿#include <fstream>
-using namespace std;
+﻿#include <iostream>
 
 int main(int argc, char** argv) 
 {
-    int a, b, c, d; 
+    int a = 0;  
     scanf_s("%d", &a);
+    int b = 0;
     scanf_s("%d", &b);
-    c = a * b % 109; 
+    int c = 0;
+    c = a * b % 109;
+    int d = 0;
     d = (c + 109) % 109 + 1; 
     printf("%d", d);
     return 0;

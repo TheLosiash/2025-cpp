@@ -2,12 +2,12 @@
 
 int main(int argc, char** argv) 
 {
-    int C;
-    int A;
-    int B;
-    scanf_s("%d", &A);
-    scanf_s("%d", &B);
-    scanf_s("%d", &C);
-    printf("The sum is %d", A+B+C);
+    int a = 0;
+    scanf_s("%d", &a);
+    int b = 0;
+    scanf_s("%d", &b);
+    int c = 0;
+    scanf_s("%d", &c);
+    printf("%d", a + b + c);
     return 0;
 }

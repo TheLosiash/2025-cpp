@@ -2,9 +2,10 @@
 
 int main(int argc, char** argv) 
 {
-    int N;
-    scanf_s("%d", &N);
-    int R = (N % 10) + (N % 100 / 10) + (N / 100);
-    printf("The sum of numbers is %d", R);
+    int n = 0;
+    scanf_s("%d", &n);
+    int r = 0;
+    r = (n % 10) + (n % 100 / 10) + (n / 100);
+    printf("%d", r);
     return 0;
 }

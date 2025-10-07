@@ -2,12 +2,12 @@
 
 int main(int argc, char** argv) 
 {
-    int N; 
-    int A; 
-    int B;
-    scanf_s("%d", &N);
-    scanf_s("%d", &A);
-    scanf_s("%d", &B);
-    printf("Mass of sulfide: %d", 2*N*A*B);
+    int n = 0; 
+    scanf_s("%d", &n);
+    int a = 0; 
+    scanf_s("%d", &a);
+    int b = 0;
+    scanf_s("%d", &b);
+    printf("%d", 2 * n * a * b);
     return 0;
 }

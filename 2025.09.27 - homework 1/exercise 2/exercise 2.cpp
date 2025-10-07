@@ -2,8 +2,8 @@
 
 int main(int argc, char** argv) 
 {
-    int a;
+    int a = 0;
     scanf_s("%d", &a);
-    printf("Number: %d", a);
+    printf("%d", a);
     return 0;
 }

@@ -2,8 +2,8 @@
 
 int main(int argc,char** argv) 
 {
-    int A;
-    scanf_s("%d", &A);
-    printf("The next number for the number %d is %d. The previous number for the number %d is %d", A, A+1, A, A-1);
+    int a = 0;
+    scanf_s("%d", &a);
+    printf("%d %d", a + 1, a - 1);
     return 0;
 }
