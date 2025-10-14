@@ -18,7 +18,7 @@ int main(int argc, char** argv)
 		printf(" Rook");
 		i += 1;
 	}
-	if (((w == x) && (z - y == 1)) ^ (w == x) && ((z - y == 2) && (y == 2)) && (y != 0))
+	if ((x == w) && (y != 1) && ((z - y == 1) xor ((z - y == 2) && (y == 2))))
 	{
 		printf(" Pawn");
 		i += 1;
@@ -33,7 +33,7 @@ int main(int argc, char** argv)
 		printf(" Bishop");
 		i += 1;
 	}
-	if ((fabs(w - x) == 1) && (fabs(z - y) == 1))
+	if ((fabs(w - x) < 2) && (fabs(z - y) < 2))
 	{
 		printf(" King");
 		i += 1;
