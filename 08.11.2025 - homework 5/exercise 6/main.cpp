@@ -18,7 +18,7 @@ int main(int argc, char** argv)
 	}
 	for (int i = 1; i < n - 1; ++i)
 	{
-		if ( a[i] > a[i - 1] and a[i] > a[i + 1])
+		if ( a[i] > a[i - 1] && a[i] > a[i + 1])
 		{
 			++j;
 		}

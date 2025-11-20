@@ -14,7 +14,7 @@ int main(int argc, char** argv)
             m = n;
         }
     }
-    while (scanf_s("%d", &n) and n != 0);
+    while (scanf_s("%d", &n) == 1 && n != 0);
     printf("%d", c);
     return 0;
 }

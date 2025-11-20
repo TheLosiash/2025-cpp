@@ -27,7 +27,7 @@ int main(int argc, char** argv)
 
 int bin(int n, int k)
 {
-	if (k == 0 or k == n)
+	if (k == 0 || k == n)
 	{
 		return 1;
 	}
